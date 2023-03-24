@@ -1,0 +1,36 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.profile {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 30vw;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .profile {
+        width: 80%;
+    }
+
+    .profile img {
+        width: 80vw;
+    }
+
+}
