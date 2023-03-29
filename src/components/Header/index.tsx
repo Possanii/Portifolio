@@ -18,9 +18,8 @@ const Rotas = [{
 
 const Header = () => {
   return (
-    <header className={styles.container} id='Home'>
+    <header className={styles.container}>
       <Link to='/' className={styles.logo}>
-        <img src={LogoIcon} alt='logo' width='30' height='30' />
         <span>Gustavo Piovesan</span>
       </Link>
       <nav className={styles.navbar} >

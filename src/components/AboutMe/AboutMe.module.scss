@@ -25,6 +25,16 @@
     width: 30vw;
 }
 
+.profile a {
+    font-size: 1rem;
+    margin: 3vh 0;
+    border: solid 1px #00fff9;
+    padding: 10px;
+    color: #00fff9;
+    text-shadow: #f000ff 0.1em 0.1em 0.2em;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column-reverse;
