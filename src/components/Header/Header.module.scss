@@ -4,11 +4,12 @@
     background-color: black;
     width: 100%;
     height: 64px;
-    position: relative;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 9999;
 }
 
 .logo {
@@ -36,6 +37,14 @@
     text-decoration: none;
 }
 
+.mobile_menu_icon {
+    display: none;
+}
+
+.mobile_menu {
+    display: none;
+}
+
 .rotulo_pagina:hover {
     text-decoration: underline white;
     text-underline-offset: 0.4rem;
@@ -48,5 +57,29 @@ html {
 @media (max-width: 768px) {
     .logo img {
         display: none;
+    }
+
+    .nav_item {
+        display: none;
+    }
+
+    .mobile_menu_icon {
+        display: block;
+    }
+
+    .mobile_menu_icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile_menu {
+        // display: block;
+    }
+
+    .mobile_menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
